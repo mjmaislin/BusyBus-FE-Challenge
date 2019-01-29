@@ -3,64 +3,43 @@
 }
 
 body {
-  background-color: #191919;
+  background-color: #4a4a4a;
   font-size: 10px;
-  font-family: Titillium Web, SF Pro, Arial, sans-serif;
+  font-family: "Titillium Web", "SF Pro", Arial, sans-serif;
   height: 667px;
+  margin: auto;
   text-align: center;
   width: 375px;
 }
 
 .blank {
   height: 30px;
-  margin: 10.5% 1.5% 1.5% 28.5%;
-  position: absolute;
+  margin: 2% 1.5% 1.5% 5.5%;
   visibility: hidden;
 }
 
 .bus1 {
-  margin-top: 10px;
-  padding-bottom: 70px;
+  margin-top: 7%;
 }
 
 .bus1 .eta-cd {
   font-weight: bold;
 }
 
-.bus2 {
-  padding-bottom: 70px;
-}
-
 .bus2 .eta-cd {
   font-weight: bold;
-}
-
-.bus3 {
-  padding-bottom: 70px;
 }
 
 .bus3 .eta-cd {
   font-weight: bold;
 }
 
-.bus4 {
-  padding-bottom: 70px;
-}
-
 .bus4 .eta-cd {
   font-weight: bold;
 }
 
-.bus5 {
-  padding-bottom: 70px;
-}
-
 .bus5 .eta-cd {
   font-weight: bold;
-}
-
-.bus6 {
-  padding-bottom: 70px;
 }
 
 .bus6 .direction {
@@ -71,16 +50,8 @@ body {
   font-weight: bold;
 }
 
-.bus7 {
-  padding-bottom: 70px;
-}
-
 .bus7 .direction {
   background-color: #DA0000;
-}
-
-.bus8 {
-  padding-bottom: 70px;
 }
 
 .bus8 .direction {
@@ -105,11 +76,10 @@ body {
 }
 
 .bussched {
-  display: flex;
+  background: #191919;
   height: 185px;
   overflow-x: hidden;
   overflow-y: auto;
-  position: relative;
   white-space: nowrap;
   width: 375px;
 }
@@ -128,9 +98,8 @@ body {
   font-size: 1.8em;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-left: .7%;
+  padding-left: 2%;
   padding-top: 2%;
-  position: absolute;
   white-space: nowrap;
   width: 375px;
 }
@@ -158,80 +127,99 @@ body {
   min-width: 55px;
 }
 
-.canceltext {
-  font-size: 1.7em;
-  font-weight: regular;
-  padding-top: 9.5%;
-}
-
 .destination {
   align-items: center;
   color: white;
-  display: flex;
+  display: inline-block;
+  float: left;
   font-size: 1.7em;
   font-weight: regular;
   justify-content: center;
   height: 30px;
-  margin: 4.5% 1.5% 1.5% 28.5%;
-  position: absolute;
+  line-height: 30px;
+  padding-left: 2%;
 }
 
 .direction {
-  align-items: center;
   background-color: #FFD500;
-  display: flex;
+  display: inline-block;
+  float: left;
   font-size: 1.7em;
   font-weight: bold;
-  justify-content: center;
   height: 30px;
-  margin: 4.5% 1.5% 1.5% 4.3%;
-  position: absolute;
+  line-height: 30px;
+  margin-left: 4%;
   width: 30px;
 }
 
 .divider {
   border-bottom: 1px solid #343434;
-  height: 1px;
-  margin-left: 30px;
-  padding-top: 70px;
-  position: absolute;
+  margin: 20px 0px 20px 30px;
   width: 315px;
 }
 
 .eta {
-  align-items: center;
   color: white;
-  display: flex;
+  display: inline-block;
+  float: right;
   font-size: 1.4em;
   font-weight: regular;
-  justify-content: right;
-  margin: 10.3% 1.5% 1.5% 78%;
-  position: absolute;
+  padding-right: 4%;
 }
 
 .eta-cd {
-    align-items: center;
     color: white;
-    display: flex;
+    display: inline-block;
+    float: right;
     font-size: 1.8em;
-    justify-content: center;
-    height: 30px;
-    margin: 4.5% 1.5% 1.5% 78%;
-    position: absolute;
+    padding-right: 4%;
+}
+
+input[type=text] {
+  background-color: #191919;
+  background-image: url(../images/SearchIcon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Titillium Web", "SF Pro", Arial, sans-serif;
+  font-size: 1.6em;
+  padding: 6px 60px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  border: none;
+  color: #191919;
+  background-color: #FFD500;
+  font-family: "Titillium Web", "SF Pro", Arial, sans-serif;
+  font-size: 1.6em;
+  margin-left: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .line {
-  align-items: center;
   border: solid 2px #FFD500;
   color: #FFD500;
-  display: flex;
+  display: inline-block;
+  float: left;
   font-size: 1.7em;
   font-weight: regular;
-  justify-content: center;
   height: 30px;
-  margin: 4.5% 1.5% 1.5% 13.5%;
-  position: absolute;
+  line-height: 25px;
+  margin-left: 1%;
   width: 50px;
+}
+
+.map {
+  background-color: #191919;
+}
+
+::placeholder {
+  color: white;
+  direction: rtl;
+  text-align: left;
 }
 
 .searchbar {
@@ -241,24 +229,7 @@ body {
 }
 
 .searchfield {
-  position: relative;
-  color: white;
   float: left;
   padding-left: 4%;
   padding-top: 7%;
-}
-
-.searchicon {
-  padding-left: 2%;
-  padding-top: 2.8%;
-  position: absolute;
-  z-index: 1;
-}
-
-.washstate {
-  font-size: 1.7em;
-  font-weight: regular;
-  padding-left: 13%;
-  padding-top: 3%;
-  position: absolute;
 }
